@@ -28,7 +28,7 @@ export const addGame = (gameName, gameDescription) => {
   const gameImg = document.createElement('img')
   gameImg.className = 'game game-img'
   gameImg.id = gameNameHyphen
-  gameImg.src = `/public/icons/${gameNameUnderscore}.png`;
+  gameImg.src = `/icons/${gameNameUnderscore}.png`;
   gameImg.alt = `Imagen del proyecto ${gameNameCaps}`
 
   const gameTitle = document.createElement('h3')

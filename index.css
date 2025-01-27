@@ -40,6 +40,12 @@ h1 {
   margin-bottom: 50px;
 }
 
+.games-section.hide {
+  display: none;
+}
+
+
+
 @media (min-width: 900px) {
   h1 {
     font-size: 80px;
@@ -121,12 +127,26 @@ h1 {
   }
   
   
-  /* GAMES SECTION*/
+  /*SECTIONS*/
   /* --------------------------------------------------------------------------------- */
   h2 {
     margin-bottom: 2%;
   }
   .games-section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--primary);
+    padding: 30px 90px 30px 90px;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+
+  .play-section {
     display: flex;
     width: 100%;
     height: 100%;
@@ -255,7 +275,7 @@ h1 {
   }
   
   
-  /* GAMES SECTION*/
+  /*SECTIONS*/
   /* --------------------------------------------------------------------------------- */
   .games-section {
     display: flex;
@@ -270,6 +290,21 @@ h1 {
     gap: 40px;
     margin-bottom: 50px;
   }
+
+  .play-section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--primary);
+    padding: 30px 90px 30px 90px;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+
   
   /* FOOTER */
   /* --------------------------------------------------------------------------------- */
@@ -386,9 +421,23 @@ h1 {
   }
   
   
-  /* GAMES SECTION*/
+  /*SECTIONS*/
   /* --------------------------------------------------------------------------------- */
   .games-section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--primary);
+    padding: 30px 90px 30px 90px;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+
+  .play-section {
     display: flex;
     width: 100%;
     height: 100%;
@@ -513,9 +562,23 @@ h1 {
   }
   
   
-  /* GAMES SECTION*/
+  /*SECTIONS*/
   /* --------------------------------------------------------------------------------- */
   .games-section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--primary);
+    padding: 30px 40px 30px 40px;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+
+  .play-section {
     display: flex;
     width: 100%;
     height: 100%;
@@ -564,4 +627,93 @@ h1 {
     text-align: center;
   }
   
+}
+
+
+/* GAMES */
+/* --------------------------------------------------------------------------------- */
+.home-desc.hide {
+  display: none;
+}
+
+.home-button.hide {
+  display: none;
+}
+
+.play-section.hide {
+  display: none;
+}
+
+.home-button {
+  display: flex;
+  max-width: fit-content;
+  justify-content: center;
+  background-color: var(--terciary);
+  border-radius: 14px;
+  padding: 15px 30px;
+  margin: 40px 0 30px 0;
+  cursor: pointer;
+  color: var(--bg);
+  font: inherit;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.home-button:hover {
+  transition: 400ms;
+  outline: none;
+  color: var(--primary);
+  background-color: var(--bg);
+  border-color: var(--terciary);
+  box-shadow: 0 0 17px var(--terciary);
+}
+
+
+
+/* Tic Tac Toe */
+/* --------------------------------------------------------------------------------- */
+#ttt-container.hide {
+  display: none;
+}
+
+#ttt-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+
+
+/* Rock Paper Scissors */
+/* --------------------------------------------------------------------------------- */
+#rps-container.hide{
+  display: none;
+}
+
+#rps-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+
+
+/* Slots */
+/* --------------------------------------------------------------------------------- */
+#slots-container.hide{
+  display: none;
+}
+
+#slots-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }

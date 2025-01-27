@@ -20,7 +20,7 @@ export const addGame = (gameName, gameDescription) => {
   // Game box
   const gameBox = document.createElement('article')
   gameBox.className = 'game game-box'
-  gameBox.id = gameNameHyphen
+  gameBox.id = `${gameNameHyphen} box`
   
   gamesHubSection.appendChild(gameBox)
   
@@ -40,8 +40,8 @@ export const addGame = (gameName, gameDescription) => {
   gameDesc.textContent = gameDescription
 
   const playButton = document.createElement('a')
-  playButton.className = 'game play-button'
-  playButton.href = `/src/${gameNameHyphen}/${gameNameHyphen}.html`
+  playButton.className = 'game play-button play'
+  playButton.id = gameNameHyphen
   playButton.textContent = 'TRY GAME'
 
   gameBox.appendChild(gameImg)

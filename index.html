@@ -15,15 +15,21 @@
     <header>
       <nav class="nav-menu">
         <ul class="ul-main-menu">
-          <li class="li-main-menu"><a href="/src/tic-tac-toe/tic-tac-toe.html">Tic Tac Toe</a></li>
-          <li class="li-main-menu"><a href="/src/rock-paper-scissors/rock-paper-scissors.html">Rock Paper Scissors</a></li>
-          <li class="li-main-menu"><a href="/src/slots/slots.html">Slots</a></li>
+          <li class="li-main-menu"><a class="play" id="header-ttt">Tic Tac Toe</a></li>
+          <li class="li-main-menu"><a class="play" id="header-rps">Rock Paper Scissors</a></li>
+          <li class="li-main-menu"><a class="play" id="header-slots">Slots</a></li>
         </ul>
       </nav>
     </header>
     <h1 class="home home-title">ALEX'S GAME HUB</h1>
     <h2 class="home home-desc">Try them out</h2>
+    <button class="home-button play hide" id="home-button">Home</button>
     <section class="games-section">
+    </section>
+    <section class="play-section hide">
+      <article class="hide" id="ttt-container"></article>
+      <article class="hide" id="rps-container"></article>
+      <article class="hide" id="slots-container"></article>
     </section>
     <footer>
       <p>Games Hub created by Àlex Meléndez Centeno</p>
